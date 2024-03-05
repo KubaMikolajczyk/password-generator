@@ -9,9 +9,37 @@
     <!-- Link stylesheets -->
     <link rel="stylesheet" href="./index.css">
 
-
+    <!-- LINK FONTS & ICONS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    <main>
+        <div id="header-text">
+            <h1>Generate a <span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+        </div>
+        <div id="password-field">
+            <p id="password-el">>nfJj56y!dDvR&ial</p>
+        </div>
+        <div id="password-controls">
+            <div class="control-row">
+                <label for="rangeSlider">Characters</label>
+                <input id="rangeSlider" type="range" name="amountRange" min="10" max="60" value="20" />
+                <input id="rangeInput" type="number" name="amountInput" min="10" max="60" value="20" />
+            </div>
+            <div class="control-row">
+                <label for="numbersCheck">Numbers</label>
+                <input id="numbersCheck" type="checkbox" checked>
+            </div>
+            <div class="control-row">
+                <label for="specialCheck">Special characters</label>
+                <input id="specialCheck" type="checkbox" checked>
+            </div>
+        </div>
+    </main>
     <!-- Link JS scripts -->
     <script src="index.js"></script>
 </body>
